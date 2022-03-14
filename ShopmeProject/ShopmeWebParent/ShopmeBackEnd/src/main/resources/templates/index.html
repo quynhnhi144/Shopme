@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Home - Shopme Admin Panel</title>
+
+<link rel="stylesheet"
+	th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+<script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<!-- Logo -->
+				<a class="navbar-brand" href="#">
+				<img alt="ShopmeBrand" th:src="@{/images/ShopmeAdminSmall.png}">
+				</a>
+				
+				<!-- Toggle Button - Responsive -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarText" aria-controls="navbarText"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<!-- Menu Items -->
+				<div class="collapse navbar-collapse" id="navbarText">
+					<ul class="navbar-nav mr-auto">
+					<!-- @ = contextpath  -->
+						<li class="nav-item active"><a class="nav-link" href="@{/users}">Users
+						</a></li>
+						<li class="nav-item"><a class="nav-link" href="@{/categories}">Categories</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="@{/brands}">Brands</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="@{/products}">Products</a>
+						</li>
+					</ul>
+					
+					<!-- Account rgiht - side -->
+					<span class="navbar-text"> User Account
+						element </span>
+				</div>
+			</nav>
+		</div>
+
+		<div>
+			<h1>Welcome to Shopme Admin Panel</h1>
+		</div>
+		
+		<div class="text-center">
+			<p>Shopme Controll Panel - Copyright &copy; Shopme</p>
+		</div>
+	</div>
+</body>
+</html>
